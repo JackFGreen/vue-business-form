@@ -1,11 +1,11 @@
 <template>
-  <div class="page-login">
+  <div class="vbf__f-login">
     login-form
   </div>
 </template>
 
 <script>
 export default {
-  name: 'page-login'
+  name: 'VbfFLogin'
 }
 </script>

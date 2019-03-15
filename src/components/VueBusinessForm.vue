@@ -17,15 +17,15 @@ export default {
   methods: {
     renderEl (h, item, index) {
       return (
-        <div class='vue-business-form-field' key={index}>
+        <div class='vbf-field' key={index}>
           {isArray(item.prepend) && (
-            <div class='vue-business-form__prepend'>{this.renderExtra(h, item, item.prepend)}</div>
+            <div class='vbf__prepend'>{this.renderExtra(h, item, item.prepend)}</div>
           )}
 
-          <div class='vue-business-form__input-field'>{this.renderInput(h, item)}</div>
+          <div class='vbf__input-field'>{this.renderInput(h, item)}</div>
 
           {isArray(item.append) && (
-            <div class='vue-business-form__append'>{this.renderExtra(h, item, item.append)}</div>
+            <div class='vbf__append'>{this.renderExtra(h, item, item.append)}</div>
           )}
         </div>
       )
@@ -35,7 +35,7 @@ export default {
       return h(el, this.getBinds({ name, value, component, config }), children)
     },
     getBinds ({ name, value, component, config }) {
-      const className = 'vue-business-form__input'
+      const className = 'vbf__input'
 
       const binds = {
         attrs: {
@@ -94,7 +94,7 @@ export default {
   },
   render (h) {
     return (
-      <div class='vue-business-form'>
+      <div class='vbf'>
         {this.form.map((item, index) => {
           if (item.group) {
             return item.group.map((group, i) => {

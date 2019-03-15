@@ -5,7 +5,7 @@ export function IValidateError (error) {
   return function (h, ctx, cur) {
     const inputName = cur.name
     const cont = error || ctx.errors.first(inputName)
-    return <div class='validate-error'>{cont}</div>
+    return <div class='vbf__p-validate__error'>{cont}</div>
   }
 }
 
