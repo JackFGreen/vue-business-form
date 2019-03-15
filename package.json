@@ -61,5 +61,19 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "description": "A Vue form plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackFGreen/vue-business-form.git"
+  },
+  "keywords": [
+    "vue",
+    "form"
+  ],
+  "author": "JackFGreen",
+  "bugs": {
+    "url": "https://github.com/JackFGreen/vue-business-form/issues"
+  },
+  "homepage": "https://github.com/JackFGreen/vue-business-form#readme"
 }

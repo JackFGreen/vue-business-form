@@ -1,31 +1,17 @@
 # vue-business-form
 
-## Project setup
+## Usage
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+yarn install vue-business-form
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+```js
 
-### Lints and fixes files
-```
-yarn run lint
-```
+import VueBusinessForm from 'vue-business-form'
+import validate from 'vue-business-form/plugins/validate'
 
-### Run your unit tests
-```
-yarn run test:unit
-```
 
-### Run your end-to-end tests
-```
-yarn run test:e2e
+Vue.use(VueBusinessForm, {
+  plugins: [validate]
+})
 ```
