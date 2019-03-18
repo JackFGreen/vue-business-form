@@ -22,7 +22,7 @@ const install = (Vue, { plugins }) => {
   console.log(VueBusinessForm)
 
   // reigster Vue component
-  Vue.component(VueBusinessForm.name, Vue.extend(VueBusinessForm))
+  Vue.component(VueBusinessForm.name, VueBusinessForm)
 }
 
 export default {

@@ -7,7 +7,8 @@ export default {
   name: 'VueBusinessForm',
   props: {
     form: {
-      type: Array
+      type: Array,
+      required: true
     }
   },
   data () {
@@ -95,7 +96,7 @@ export default {
   render (h) {
     return (
       <div class='vbf'>
-        {this.form.map((item, index) => {
+        {this.form && this.form.map((item, index) => {
           if (item.group) {
             return item.group.map((group, i) => {
               group.name = item.name

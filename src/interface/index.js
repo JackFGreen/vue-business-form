@@ -1,6 +1,6 @@
 import merge from 'merge'
 
-export function IFormBase (name, value) {
+export function IFormBase (name = '', value = '') {
   return {
     name,
     value
@@ -19,10 +19,9 @@ export function IFormBase (name, value) {
  * @param {Object} [options.config={}] the second argument to the `createElement`
  * @param {Group[]} [options.group=[]] group elements like radios, `options.name` will set to `Group.name`, native radio element need `Group.value`
  */
-export function IFormField (options, ...args) {
-  options.config = options.config || {}
+export function IFormField (...options) {
   const base = IFormBase()
-  const field = merge.recursive(true, base, options, ...args)
+  const field = merge.recursive(base, ...options)
   return field
 }
 /**

@@ -4,11 +4,13 @@
   "private": false,
   "main": "src/index.js",
   "files": [
-    "src",
+    "fields",
     "forms",
-    "plugins"
+    "plugins",
+    "src"
   ],
   "scripts": {
+    "field": "node bin/field.js",
     "prettier": "prettier --config ./.prettierrc --write 'src/**/*.{js,vue,scss,json}'",
     "lint": "standard --plugin html 'src/**/*.{js,vue}' --verbose | snazzy",
     "fix": "standard --plugin html 'src/**/*.{js,vue}' --fix --verbose | snazzy",
