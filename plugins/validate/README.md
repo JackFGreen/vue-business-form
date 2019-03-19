@@ -1,10 +1,10 @@
-# @vue-business-form/plugin-validate
+# vue-business-form/plugins/validate
 VeeValidate is required. This plugin will inject `$validator` in form.
 
 ## Usage
 ```js
 import VueBusinessForm from 'vue-business-form'
-import validate from '@vue-business-form/plugin-validate'
+import validate from 'vue-business-form/plugins/validate'
 import VeeValidate from 'vee-validate'
 
 Vue.use(VeeValidate)
@@ -15,7 +15,7 @@ Vue.use(VueBusinessForm, {
 ```
 
 ```js
-import { IValidateDirective, IValidateError } from '@vue-business-form/plugin-validate'
+import { IValidateDirective, IValidateError } from 'vue-business-form/plugins/validate'
 
 export default {
   data () {
