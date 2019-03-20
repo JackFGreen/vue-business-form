@@ -19,8 +19,6 @@ const install = (Vue, { plugins }) => {
     Object.assign(VueBusinessForm, { mixins: pluginExtends })
   }
 
-  console.log(VueBusinessForm)
-
   // reigster Vue component
   Vue.component(VueBusinessForm.name, VueBusinessForm)
 }

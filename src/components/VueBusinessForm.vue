@@ -12,7 +12,6 @@ export default {
     }
   },
   data () {
-    console.log(this.form)
     return {}
   },
   methods: {
@@ -62,8 +61,6 @@ export default {
     inputListeners (name) {
       return {
         input: event => {
-          console.log('===inputListeners')
-          console.log(event)
           let val = ''
 
           const el = this.form.find(e => e.name === name)
@@ -96,21 +93,22 @@ export default {
   render (h) {
     return (
       <div class='vbf'>
-        {this.form && this.form.map((item, index) => {
-          if (item.group) {
-            return item.group.map((group, i) => {
-              group.name = item.name
+        {this.form &&
+          this.form.map((item, index) => {
+            if (item.group) {
+              return item.group.map((group, i) => {
+                group.name = item.name
 
-              if (group.component) {
-                group.value = item.value
-              }
+                if (group.component) {
+                  group.value = item.value
+                }
 
-              const key = `${index}-${i}`
-              return this.renderEl(h, group, key)
-            })
-          }
-          return this.renderEl(h, item, index)
-        })}
+                const key = `${index}-${i}`
+                return this.renderEl(h, group, key)
+              })
+            }
+            return this.renderEl(h, item, index)
+          })}
       </div>
     )
   }

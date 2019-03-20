@@ -96,5 +96,5 @@ Plugin compoents name use `VbfP` start, e.g. `VbfPValidate.vue`
 <div class="vbf__p-validate__error"></div>
 ```
 
-## Lisence
+## License
 MIT
