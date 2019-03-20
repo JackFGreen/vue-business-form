@@ -1,6 +1,6 @@
 {
   "name": "vue-business-form",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "description": "A Vue form plugin",
   "author": "JackFGreen",
@@ -44,7 +44,6 @@
     }
   },
   "files": [
-    "dist",
     "fields",
     "forms",
     "plugins",
