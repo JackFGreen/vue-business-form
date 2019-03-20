@@ -1,9 +1,10 @@
 {
   "name": "vue-business-form",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": false,
   "description": "A Vue form plugin",
   "author": "JackFGreen",
+  "homepage": "https://github.com/JackFGreen/vue-business-form#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JackFGreen/vue-business-form.git"
@@ -12,6 +13,13 @@
     "url": "https://github.com/JackFGreen/vue-business-form/issues"
   },
   "license": "MIT",
+  "files": [
+    "dist",
+    "fields",
+    "forms",
+    "plugins",
+    "src"
+  ],
   "main": "dist/VueBusinessForm.common.js",
   "unpkg": "dist/VueBusinessForm.umd.min.js",
   "scripts": {
@@ -59,13 +67,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "files": [
-    "fields",
-    "forms",
-    "plugins",
-    "src"
-  ],
-  "homepage": "https://github.com/JackFGreen/vue-business-form#readme",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
