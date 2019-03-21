@@ -2,6 +2,10 @@
 
 Render form
 
+## Examples
+
+https://codesandbox.io/s/549qnzqyq4
+
 ## Usage
 
 ```sh
@@ -49,7 +53,9 @@ Vue.use(VueBusinessForm[, config])
 ```
 
 #### config.plugins
+
 Support plugins to extend VueBusinessForm. Use `mixins` in back.
+
 ```
 plugins params './src/index.js'
 // e.g. './plugins/validate/index.js'
@@ -58,15 +64,19 @@ plugins params './src/index.js'
 ### VueBusinessForm config
 
 #### :form{Array\<Option\>}
+
 Render form config
 
 ##### Option{Object}
+
 ```
 Option params './src/interface/index.js' IFormField
 ```
+
 #### @current{Function}
 
 Return current input data.
+
 ```js
 {
   name: '',
@@ -97,4 +107,5 @@ Plugin compoents name use `VbfP` start, e.g. `VbfPValidate.vue`
 ```
 
 ## License
+
 MIT
