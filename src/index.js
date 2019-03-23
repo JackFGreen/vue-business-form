@@ -6,7 +6,7 @@ import { isArray, isFunction } from './tools/utils'
  * @param {Function} [plugins.install] vue plugin install, run global
  * @param {Object} [plugins.extend] vue.extend to extend VueBusinessForm, will push to `VueBusinessForm.mixins`
  */
-const install = (Vue, { plugins }) => {
+const install = (Vue, { plugins } = {}) => {
   // handle plugins
   if (isArray(plugins)) {
     const pluginExtends = []
