@@ -1,5 +1,9 @@
 # vue-business-form
 
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 Render form
 
 ## Examples
@@ -105,7 +109,3 @@ Plugin compoents name use `VbfP` start, e.g. `VbfPValidate.vue`
 ```html
 <div class="vbf__p-validate__error"></div>
 ```
-
-## License
-
-MIT
