@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import install from '../../src/index'
-import VueBusinessForm from '../../src/components/VueBusinessForm.vue'
+import VueBusinessForm from '../../src/components/VueBusinessForm'
 
 const plugin = {
   extend: {

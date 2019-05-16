@@ -1,13 +1,20 @@
+import { renderCont } from '../../src/tools/utils'
+
 /**
  * render validate error
+ * @param {String|Function} error String or Function return Array<VNodes>
  */
 export function IValidateError (error) {
   return function (h, ctx, cur) {
     const inputName = cur.name
-    const cont = error || ctx.errors.first(inputName)
-    return h('div', {
-      class: 'vbf__p-validate__error'
-    }, cont)
+    const cont = renderCont(h)(error) || ctx.errors.first(inputName)
+    return h(
+      'div',
+      {
+        class: 'vbf__p-validate__error'
+      },
+      cont
+    )
   }
 }
 

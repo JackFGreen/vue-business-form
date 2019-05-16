@@ -11,3 +11,9 @@ export function mkField (handler, config) {
     return handler(config, ...options)
   }
 }
+
+export function renderCont (h) {
+  return cont => {
+    return isFunction(cont) ? cont(h) : cont
+  }
+}

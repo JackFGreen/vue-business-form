@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import VueBusinessForm from '../../src/components/VueBusinessForm.vue'
+import VueBusinessForm from '../../src/components/VueBusinessForm'
 
 const form = [
   {

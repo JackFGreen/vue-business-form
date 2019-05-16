@@ -1,7 +1,6 @@
-<script>
 import merge from 'merge'
 import { KIND_CHECKBOX } from '../constant'
-import { isArray, isFunction } from '../tools/utils.js'
+import { isArray, renderCont } from '../tools/utils.js'
 
 export default {
   name: 'VueBusinessForm',
@@ -32,7 +31,7 @@ export default {
     },
     renderInput (h, { name, value, component, children, config = {} }) {
       const el = component || 'input'
-      return h(el, this.getBinds({ name, value, component, config }), isFunction(children) ? children(h) : children)
+      return h(el, this.getBinds({ name, value, component, config }), renderCont(h)(children))
     },
     getBinds ({ name, value, component, config }) {
       const className = 'vbf__input'
@@ -113,4 +112,3 @@ export default {
     )
   }
 }
-</script>
